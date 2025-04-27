@@ -23,9 +23,9 @@ The API manages products, users, and categories, enabling users to search, filte
 
 
 ## 3. API Endpoints
-### 3.1 Books
+### 3.1 Products
 **GET /products**
-- Returns a paginated list of books.
+- Returns a paginated list of products.
 - Filters: `title` 
 - HATEOAS links provided for navigation.
 
@@ -100,7 +100,7 @@ The API manages products, users, and categories, enabling users to search, filte
 - HATEOAS links provided for pagination.
 
 ## 9. Caching Strategy
-- Books list cached using ETag and Last-Modified headers.
+- Products list cached using ETag and Last-Modified headers.
 - Frequent GET requests use Redis caching.
 - Cache invalidation upon updates.
 - Explanation of non-cached endpoints included. 
